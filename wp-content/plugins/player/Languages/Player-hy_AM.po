@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: player\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-20 18:54+0400\n"
+"PO-Revision-Date: 2012-06-20 19:00+0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Armenian\n"
+"X-Poedit-SearchPath-0: C:\\wamp\\www\\wordpress3\\wp-content\\plugins\\Player\n"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:78
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:84
+msgid "play"
+msgstr "խաղալ"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:79
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:85
+msgid "pause"
+msgstr "դադար"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:80
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:86
+msgid "toggle pause"
+msgstr "անցում դադար"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:81
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:87
+msgid "stop"
+msgstr "կասեցնել"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:82
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:88
+msgid "play previous"
+msgstr "նախորդ խաղում"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:83
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:89
+msgid "play next"
+msgstr "հաջորդ խաղում"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:84
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:90
+msgid "volume"
+msgstr "ձայն"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:85
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:91
+msgid "repeat"
+msgstr "կրկնել"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:86
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:92
+msgid "shuffle"
+msgstr "խառնվել"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:87
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:93
+msgid "HD"
+msgstr "HD"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:88
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:94
+msgid "open/close playlist"
+msgstr "Բացիր / փակիր երգացանկի"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:89
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:95
+msgid "open library"
+msgstr "բաց գրադարան"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:90
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:96
+msgid "close library"
+msgstr "փակիր գրադարան"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:91
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:97
+msgid "switch full screen"
+msgstr "անցնել ամբողջ էկրանով"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:92
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:98
+msgid "back to list"
+msgstr "Վերադառնալ ցանկ"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:93
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:99
+msgid "Replay"
+msgstr "կրկնել"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/preview_settings.php:94
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/settings.php:100
+msgid "Next"
+msgstr "հաջորդ"
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/elements/playlist.php:25
+msgid "behavior.modal"
+msgstr ""
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/elements/theme.php:49
+msgid "Select Theme"
+msgstr ""
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/elements/theme.php:49
+msgid "select.option"
+msgstr ""
+
+#: C:\wamp\www\wordpress3\wp-content\plugins\Player/elements/theme.php:52
+msgid "select.genericlist"
+msgstr ""
+
