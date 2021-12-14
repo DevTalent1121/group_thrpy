@@ -1,0 +1,369 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_US\n"
+"X-Generator: Poedit 2.2.3\n"
+
+msgid "Edit Grids"
+msgstr "Modifier les grilles"
+
+msgid "New Grid"
+msgstr "Nouvelle grille"
+
+msgid "Edit Grid"
+msgstr "Modifier la grille"
+
+msgid "Refresh"
+msgstr "Actualiser"
+
+msgid "Filters list"
+msgstr "Liste des filtres"
+
+msgid "Search"
+msgstr "Recherche"
+
+msgid "All tags"
+msgstr "Toutes les étiquettes"
+
+msgid "No tag"
+msgstr "Aucune étiquette"
+
+msgid "No Grid Found. Click here to create one"
+msgstr "Vous n'avez pas de grille. Cliquez ici pour en créer"
+
+msgid "Edit Grids here"
+msgstr "Modifier les grilles ici"
+
+msgid "Save Grid"
+msgstr "Enregistrer la grille"
+
+msgid "Order"
+msgstr "Trier"
+
+msgid "Preview"
+msgstr "Aperçu"
+
+msgid "Selection"
+msgstr "Sélection"
+
+msgid "Meta tag"
+msgstr "Meta étiquette"
+
+msgid "Filters combination"
+msgstr "Combinaison des filtres"
+
+msgid "AND"
+msgstr "ET"
+
+msgid "OR"
+msgstr "OU"
+
+msgid "Sort by"
+msgstr "Trier par"
+
+msgid "Select"
+msgstr "Sélectionner"
+
+msgid "All"
+msgstr "Toutes"
+
+msgid "None"
+msgstr "Aucune"
+
+msgid "Refresh videos"
+msgstr "Mettre à jour les videos"
+
+msgid "Results"
+msgstr "Résultats"
+
+msgid "Themes selection"
+msgstr "Sélection du thème"
+
+msgid "Select a theme"
+msgstr "Choisir un thème"
+
+msgid "Theme customization"
+msgstr "Personnalisation du thème"
+
+msgid "Show tags filter"
+msgstr "Afficher le filtre d'étiquettes"
+
+msgid "No"
+msgstr "Non"
+
+msgid "Yes"
+msgstr "Oui"
+
+msgid "Top"
+msgstr "En haut"
+
+msgid "Left"
+msgstr "À gauche"
+
+msgid "Right"
+msgstr "À droite"
+
+msgid "Title"
+msgstr "Titre"
+
+msgid "Theme"
+msgstr "Thème"
+
+msgid "Grid Title"
+msgstr "Titre de la grille"
+
+msgid "How would you like to name your grid?"
+msgstr "Comment voulez-vous nommer votre grille?"
+
+msgid "Grid Description"
+msgstr "Description de la grille"
+
+msgid "A brief description of your grid"
+msgstr "Une brève description de votre grille"
+
+msgid "You must at least provide a title"
+msgstr "Vous devez fournir le titre"
+
+msgid "Add new grid"
+msgstr "Ajouter une grille"
+
+msgid "Edit"
+msgstr "Modifier"
+
+msgid "Delete"
+msgstr "Supprimer"
+
+msgid "Default"
+msgstr "Défaut"
+
+msgid "How would you like to name your portfolio?"
+msgstr "Comment voulez-vous nommer votre portfolio?"
+
+msgid "You must provide a title"
+msgstr "Vous devez renseigner un titre"
+
+msgid "Add a new portfolio"
+msgstr "Ajouter un nouveau portfolio"
+
+msgid "Please wait while we're refreshing your account videos data."
+msgstr "Veuillez patienter pendant la mise à jour de vos données de vidéos."
+
+msgid "Videos catalog"
+msgstr "Catalogue de vidéos"
+
+msgid "Vimeo public videos"
+msgstr "Vidéos publiques de Vimeo"
+
+msgid "Registred videos"
+msgstr "Vidéos enregitrées"
+
+msgid "Account videos"
+msgstr "Vidéos du compte"
+
+msgid "You have no registred public video. Use the input above to add some."
+msgstr "Vous n'avez aucune vidéo publique enregistrée. Utilisez le champs au dessus pour en ajouter."
+
+msgid "Invalid url"
+msgstr "Url non valide"
+
+msgid "You already have this video in your catalog."
+msgstr "Vous avez déjà cette vidéo dans votre catalogue."
+
+msgid "You need to <a href='?page=wp_video_gallery-conf'>connect your account</a> to add new videos."
+msgstr "Vous devez <a href='?page=wp_video_gallery-conf'>vous connecter</a> pour ajouter des vidéos."
+
+msgid "Connect your account"
+msgstr "Connectez votre compte"
+
+msgid "Account configuration"
+msgstr "Configuration"
+
+msgid "Disconnect"
+msgstr "Déconnecter"
+
+msgid "API Key"
+msgstr "Clé API"
+
+msgid "The token you provided is unvalid"
+msgstr "La clé fournie est invalide"
+
+msgid "You are about to disconnect your Vimeo account. Would you like to keep your private Vimeo videos ?"
+msgstr "Vous allez déconnecter votre compte Vimeo. Voulez-vous garder les données de vos vidéos privées?"
+
+msgid "Keep the videos"
+msgstr "Garder les vidéos"
+
+msgid "Remove the videos"
+msgstr "Effacer les vidéos"
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgid "Edit portfolios"
+msgstr "Modifier les portfolios"
+
+msgid "New portfolio"
+msgstr "Nouveau portfolio"
+
+msgid "Edit portfolio"
+msgstr "Modifier le portfolio"
+
+msgid "Save portfolio"
+msgstr "Enregistrer"
+
+msgid "Steps to build your portfolio/slider"
+msgstr "Étapes pour construire votre portfolio"
+
+msgid "<b>Step 1</b> : Select the videos you want"
+msgstr "<b>Étape 1 : Choisir les vidéos</b>"
+
+msgid "<b>Step 2</b> : Order your selected videos"
+msgstr "<b>Étape 2</b> : Trier les vidéos sélectionnées"
+
+msgid "<b>Step 3</b> : Preview and configure your portfolio/slider"
+msgstr "<b>Étape 3</b> : Aperçu et configuration de votre portfolio"
+
+msgid "Tags list"
+msgstr "Mots clés"
+
+msgid "Validate"
+msgstr "Valider"
+
+msgid "You can't create nor manage portfolios if you do not have any videos.<br><br>To register public and/or private videos, <a href='"
+msgstr "Vous ne pouvez ni créer ni gérer des portfolios si vous n'avez pas de vidéos.<br><br>Pour ajouter des vidéos publiques et/ou privées, <a href='"
+
+msgid "'>go to the <b>Videos catalog</b> page</a>"
+msgstr "'>rendez-vous sur la page <b>Catalogue de vidéos</b></a>"
+
+msgid "Classic"
+msgstr "Classique"
+
+msgid "Mosaic"
+msgstr "Mosaïque"
+
+msgid "Save your changes"
+msgstr "Enregistrez vos modifications"
+
+msgid "Title box"
+msgstr "Zone titre"
+
+msgid "Text's color"
+msgstr "Couleur du texte"
+
+msgid "Text color on hover"
+msgstr "Couleur du texte en hover"
+
+msgid "Box's color"
+msgstr "Couleur de la zone"
+
+msgid "Apply colors"
+msgstr "Appliquez les couleurs"
+
+msgid "Tags"
+msgstr "Mots clés"
+
+msgid "Choose the tags to display"
+msgstr "Choisissez les mots clés à afficher"
+
+msgid "Choose"
+msgstr "Choisir"
+
+msgid "Choose the tags color"
+msgstr "Choisissez la couleur des mots clés"
+
+msgid "Choose the width of a simple video"
+msgstr "Choisissez la largeur d'une simple vidéo"
+
+msgid "The width :"
+msgstr "Largeur :"
+
+msgid "Custom CSS"
+msgstr "CSS personnalisé"
+
+msgid "Slider settings"
+msgstr "Paramètres du Slider"
+
+msgid "Slider duration"
+msgstr "Durée du slider"
+
+msgid "Show the title"
+msgstr "Afficher le titre"
+
+msgid "Show the pagination"
+msgstr "Afficher la pagination"
+
+msgid "Tags combination"
+msgstr "Combinaison des mots clés"
+
+msgid "This list contains all tags available in your videos on Vimeo"
+msgstr "Cette liste contient tous les mots clés de vos vidéos sur Vimeo"
+
+msgid "Close"
+msgstr "Fermer"
+
+msgid "You have already reached your 50 videos limit. For a professional and unrestricted use of this plugin, <a href='http://wp_video_gallery-plug.in/' target='_blank'>Get the premium version</a>"
+msgstr "Vous avez atteint votre limite de 50 vidéos. Pour un usage pro et illimité, <a href='http://wp_video_gallery-plug.in/' target='_blank'>Obtenez la version Pro</a>"
+
+msgid "You can manage up to 50 videos with the WP Video Gallery free version. For a professional and unrestricted use of WP Video Gallery, <a href='http://wp_video_gallery-plug.in/' target='_blank'>Get the premium version</a>"
+msgstr "Vous pouvez gérer un max de 50 vidéos avec la version gratuite d'WP Video Gallery. Pour un usage pro et illimité, <a href='http://wp_video_gallery-plug.in/' target='_blank'>Obtenez la version Pro</a>"
+
+msgid "There are no portfolios"
+msgstr "Vous n'avez aucun portfolio"
+
+msgid "Your Vimeo account is not connected"
+msgstr "Vous n'avez pas encore connecté votre compte Vimeo"
+
+msgid "WP Video Gallery Pro key"
+msgstr "Clé WP Video Gallery Pro"
+
+msgid "Here you can enter your WP Video Gallery pro version key. You can get it from <a href='https://wp-video-gallery.com/' target='_blank'>our website</a>"
+msgstr "Vous pouvez renseigner votre clé WP Video Gallery Pro dans cette page. Vous pouvez vous en procurer sur <a href='https://wp-video-gallery.com/' target='_blank'>notre site web</a>"
+
+msgid "The provided key is not valid."
+msgstr "La clé fournie est non-valide."
+
+msgid "The provided key is already being used to it's max."
+msgstr "La clé fournie est déjà utilisée à son max."
+
+msgid "Import demo content"
+msgstr "Importer la démo"
+
+msgid "Import demo"
+msgstr "Importer la démo"
+
+msgid "Here you can get your 16 videos demo."
+msgstr "Ici, vous pouvez récupérer les 16 vidéos de démo."
+
+msgid "The Vimeo api key enables you to get your account's private videos and keep them synchronized. To learn how to get your key, please refer to the video bellow."
+msgstr "La clé api Vimeo vous permet de récupérer les vidéos de votre compte et de les garder à jour automatiquement. Pour voir comment récupérer votre clé, veuillez vous référer à la vidéo ci-dessous."
+
+msgid "Enter your key"
+msgstr "Entrze votre clé"
+
+msgid "Single video"
+msgstr "Vidéo unique"
+
+msgid "Channel videos"
+msgstr "Vidéos d'une chaîne"
+
+msgid "videos"
+msgstr "vidéos"
+
+msgid "The Youtube api key enables you to retrieve all the public videos from a channel."
+msgstr "La clé api de Youtube vous permet de récupérer toutes les vidéos publiques d'une chaine."
+
+msgid "Youtube API Key"
+msgstr "Clé api Youtube"
+
+msgid "Remove"
+msgstr "Supprimer"
+
+msgid "You can not import our demo because you have more than 34 videos, and the demo contains 16 videos.<br>With the free version of the plugin, you can't have more than 50 videos in your catalog. For more information about the <a target='_blank' href='https://wp-video-gallery.com/pro-video-gallery/'>pro plugin</a>"
+msgstr "Vous ne pouvez pas importer la démo elle car vous avez 34 vidéos, et la démo contient 16 vidéos.<br>Avec la version gratuite de l'extension, vous ne pouvez pas dépasser 50 vidéos dans le catalogue. Pour plus de détails sur la <a href='https://wp-video-gallery.com/fr/galeries-video-pro/' target='_blank'>version Pro</a>"

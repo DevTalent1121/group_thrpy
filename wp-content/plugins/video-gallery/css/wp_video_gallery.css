@@ -1,0 +1,1119 @@
+#wpwrap {
+	overflow: hidden;
+}
+
+#vimeoMajbaGrids, #singleGrid, #wp_video_gallery-account {
+	width: calc(100% - 10px);
+	max-width: 1300px;
+}
+
+#wp_video_gallery-account .vimeoPrivateBox {
+	width: 47%;
+	margin-right: 6%;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+
+#wp_video_gallery-account .youtubePrivateBox {
+	width: 47%;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+
+#singleGrid {
+	display: none;
+}
+
+#vimeoMajbaGrids #id{
+	width: 50px;
+}
+
+.vimeoPublicBox .subtitle, .registredVideos .subtitle {
+	padding: 0;
+	margin-bottom: 15px;
+	color: rgb(34, 34, 34);
+	font-weight: bold;
+}
+
+.vimeoPrivateBox .description, .youtubePrivateBox .description {
+	margin-bottom: 20px;
+    margin-top: 30px;
+    min-height: 45px;
+}
+
+.loadingCatalog {
+	width: 600px;
+    text-align: center;
+    padding: 30px;
+    background: white;
+    margin: 50px auto;
+}
+
+#previewDiv .accordion.open .inAccordion {
+	display: block;
+}
+
+#previewDiv .accordion.close .inAccordion {
+	display: none;
+}
+
+#previewDiv .accordion .inAccordion {
+	padding: 10px;
+}
+
+.inAccordion .sp-replacer {
+	float: right;
+	margin-bottom: 10px;
+}
+
+.loadingCatalog .fa {
+	font-size: 25px;
+}
+
+.vimeoPublicBox .fa {
+	color: green;
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+.vimeoPublicBox .fa {
+	cursor: pointer;
+}
+
+.vimeoPublicBox input {
+	width: calc(100% - 36px);
+    font-size: 16px;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+.vimeoPrivateBox .label, .youtubePrivateBox .label {
+	font-size: 18px;
+    font-weight: bold;
+	width: 100%;
+    display: block;
+}
+
+.vimeoPrivateBox .vimeoAT, .youtubePrivateBox .youtubeAT {
+	width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    color: #666684;
+    margin: 10px 0 20px;
+}
+
+.wp-core-ui .vimeoPrivateBox button, .wp-core-ui .youtubePrivateBox button {
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 5px 20px;
+    height: auto;
+}
+
+.wp-core-ui .vimeoPrivateBox .button-primary:active {
+	vertical-align: middle;
+}
+
+.lazy-hidden {
+    opacity: 0;
+}
+
+.lazy-loaded {
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+
+#vimeoMajbaGrids h2 a,#wp_video_gallery-account h2 a , #vimeoMajbaGrids h2 a:active, #wp_video_gallery-account h2 a:active {
+	margin-left: 4px;
+	padding: 4px 8px;
+	position: relative;
+	top: -3px;
+	text-decoration: none;
+	border: none;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background: #e0e0e0;
+	text-shadow: none;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+#vimeoMajbaGrids h2 a:hover,#wp_video_gallery-account h2 a:hover {
+	background: #2ea2cc;
+	color: #fff;
+}
+
+#vimeoMajbaGrids table{
+	width: 100%;
+}
+
+#wp_video_gallery-account h1 {
+	font-size: 23px;
+	font-weight: 400;
+}
+
+.catalog h1 {
+	margin-bottom: 50px;
+}
+
+#wp_video_gallery-account table .disabled{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(152, 138, 138, 0.74);
+	z-index: 1000;
+}
+
+#wp_video_gallery-account p.error {
+	display: none;
+	font-size: 13px;
+    margin: 6px 0 0;
+    color: #E24C4C;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+#wp_video_gallery-account p.error {
+	display: none;
+	font-size: 13px;
+    margin: 6px 0 0;
+    color: #E24C4C;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.youtube-channel .added-videos {
+	color: #17a217;
+    text-align: right;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    font-size: 13px;
+    display: none;
+}
+
+#wp_video_gallery-account iframe {
+	width: 100%;
+}
+
+.registredVideos .line {
+	font-size: 18px;
+	background-color: #FFF;
+}
+
+.registredVideos .line td {
+	padding: 5px 0;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.registredVideos .line:nth-child(odd) {
+	background: #f9f9f9;
+}
+
+.registredVideos .line .thumb {
+	width: 130px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.registredVideos .line .title {
+	color: #0073aa;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.registredVideos .line .remove, .registredVideos .line .refresh {
+	width: 50px;
+	text-align: center;
+}
+
+.registredVideos .line img {
+	vertical-align: middle;
+    width: 85px;
+}
+
+.registredVideos p, .registredVideos h4 {
+	margin: 0;
+	padding: 20px;
+}
+
+.registredVideos .line .fa {
+	color: red;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.registredVideos .line .refresh .fa {
+	color: #0073AC;
+}
+
+.vimeoPublicBox .error, .vimeoPublicBox .duplicate, .vimeoPublicBox .connect {
+	position: absolute;
+	display: none;
+	color: red;
+	margin: 5px 0;
+}
+
+.registredVideos {
+	padding-top: 20px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+.registredVideos .info {
+	font-style: italic;
+    text-align: right;
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+
+.registredVideos .info span {
+	display: block;
+}
+
+.registredVideos .info .refresh_base {
+	color: #0073AC;
+    cursor: pointer;
+}
+
+.registredVideos .info .refresh_base .fa {
+	margin-left: 5px;
+}
+
+.registredVideos .info .refresh_base.disabled {
+	color: gray;
+}
+
+.public .registredVideos .info span {
+	padding-top: 18px;
+}
+
+.registredVideos .around {
+    min-height: 350px;
+    overflow: scroll;
+    border-top: 1px solid;
+    background-color: #FFF;
+}
+.registredVideos .around table {
+	width: 100%;
+}
+
+.registredVideos .subtitle {
+	font-size: 15px;
+	margin-bottom: 30px;
+}
+
+#wp_video_gallery-account table .first, #wp_video_gallery-account table .second {
+	width: 50%;
+}
+
+#wp_video_gallery-account .public, #wp_video_gallery-account .private, #wp_video_gallery-account .youtube {
+	width: 48%;
+    float: left;
+    border-top: 3px solid;
+    padding-top: 20px;
+}
+
+#wp_video_gallery-account .youtube {
+	margin-right: 52%;
+}
+
+#wp_video_gallery-account .public {
+	margin-right: 4%;
+}
+
+#wp_video_gallery-account .vimeoPublicBox {
+	margin: 0;
+	padding-bottom: 40px;
+    background: #F1F1F1;
+    position: relative;
+}
+
+#wp_video_gallery-account .private .vimeoPublicBox .account-name {
+	text-align: center;
+    color: #72777C;
+    background: white;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #DDDDDD;
+}
+
+#wp_video_gallery-account .private .vimeoPublicBox .account-name .fa {
+	color: red;
+	cursor: pointer;
+	margin-left: 7px;
+}
+
+#wp_video_gallery-account .vimeoPublicBox .subtitle {
+    font-size: 15px;
+}
+
+#vimeoMajbaGrids .spinner, #singleGrid .spinner {
+	display: inline-block;
+}
+
+#vimeoMajbaGrids .error {
+	display: none;
+    color: red;
+}
+
+#singleGrid h1, #vimeoMajbaGrids h2 {	
+	border-bottom: 1px solid rgb(195, 182, 182);
+	padding-bottom: 15px;
+	font-weight: 400;
+	font-size: 23px;
+}
+
+#singleGrid h1 a.page-title-action {
+    margin-left: 20px;
+}
+
+#singleGrid h1 a.page-title-action.disabled {
+    color: white;
+    background-color: #b4b9be;
+}
+
+#singleGrid h1 a.page-title-action.disabled:focus {
+	border-color: #ccc;
+}
+
+.add-grid-back .titleInput {
+	width: 400px;
+    margin-right: 20px;
+    max-width: 100%;
+    padding: 5px;
+}
+
+.add-grid-back .createNewGrid {
+	text-align: center;
+}
+
+#singleGrid .accordion {
+	margin-bottom: 10px;
+}
+
+#videosList .firstList, #previewDiv .firstList {
+	display: inline-block;
+	width: 250px;
+}
+
+#singleGrid .filtersList, .metaTag, #singleGrid .accordion {
+	display: inline-block;
+	width: 250px;
+	background: white;
+	border: 1px solid rgb(34, 34, 34);
+}
+
+.tagsList .chooseTags, .tagsList .tagsColor {
+	margin-top: 20px;
+}
+
+.inAccordion p {
+	margin: 10px 0 0;
+}
+
+.accordion.customCSS textarea {
+	width: 100%;
+	height: 150px;
+	resize: none;
+}
+
+#singleGrid .searchDiv {
+	margin-bottom: 10px;
+	font-size: 20px;
+	padding: 10px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	border: 1px solid #e5e5e5;
+	background-color: white;
+}
+
+#singleGrid .searchDiv input {
+	width: 300px;
+	max-width: 80%;
+	font-size: 15px;
+}
+
+#singleGrid .searchDiv button {
+	font-size: 17px;
+}
+
+.metaTag {
+	text-transform: none;
+	margin-bottom: 10px;
+}
+
+#andOrFilter {
+	text-align: center;
+	padding: 10px 0;
+	background: #f9f9f9;
+}
+
+#andOrFilter p {
+	margin: 0 0 3px 10px;
+	text-align: left;
+}
+
+#andOrFilter div {
+	display: inline-block;
+}
+
+#singleGrid .videoWidth input {
+	width: 100px;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+#singleGrid .videoWidth #videoSimpleWidth {
+	text-transform: none;
+}
+
+#singleGrid .chooseTags p {
+	margin-bottom: 3px;
+}
+
+#singleGrid .tagsColor p {
+	margin-bottom: 3px;
+}
+
+#singleGrid .tagsColor input {
+	height: 28px;
+	width: 100px;
+}
+
+#sliderOption input[type=text] {
+	width: 60px;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+#singleGrid .configList input[type=radio], #singleGrid .themeList input[type=radio] {
+	margin-right: 10px;
+}
+
+#singleGrid .filtersList h3, .metaTag h3, .accordion h3 {
+	background: rgb(34, 34, 34);
+	margin: 0;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: rgb(241, 241, 241);
+	text-transform: initial;
+}
+
+.accordion h3 {
+	text-align: left;
+	padding: 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+.accordion h3 .fa {
+	color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 6.5px;
+    right: 10px;
+}
+
+.accordion.close h3 .fa {
+	transform: rotate(-90deg);
+}
+
+.accordion .apply_colors {
+	float: right;
+	margin-top: 10px;
+}
+
+#singleGrid .filtersList h3 {
+	margin-bottom: 0;
+}
+
+#singleGrid .filtersList h3 i {
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+#singleGrid .filtersList div[class^="check-"] {
+	margin: 5px 0 5px 10px;
+	text-transform: capitalize;
+}
+
+#singleGrid .header{
+	height: 38px;
+	background: rgb(34, 34, 34);
+	margin-bottom: 10px;
+}
+
+#videosOrder {
+	display: none;
+	max-width: 100%;
+}
+
+#videosOrder .brick {
+	background: rgb(234, 234, 234);
+	max-width: 100%;
+}
+
+#videosOrder .brick .thumb {
+	height: 100%;
+	display: inline-block;
+	margin-right: 50px;
+	vertical-align: middle;
+}
+
+#videosOrder .brick .name {
+	display: inline-block;
+	width: 50%;
+}
+
+#videosOrder .brick .bigContainer {
+	display: inline-block;
+	float: right;
+	height: 100%;
+	padding-top: 10px;
+}
+
+#videosOrder .brick .bigContainer span {
+	margin-right: 10px;
+}
+
+#videosOrder .brick .bigContainer .fa {
+	font-size: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+	top: 5px;
+}
+
+#videosOrder .brick .bigContainer .fa-bars {
+	cursor: move;
+}
+
+#videosOrder .brick .bigContainer .fa-times {
+	cursor: pointer;
+}
+
+#videosOrder .brick .rank {
+	display: inline-block;
+	width: 50px;
+	text-align: center;
+}
+
+#videosList .secondList, #previewDiv .secondList {
+	width: calc(100% - 264px);
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: top;
+}
+
+#previewDiv .secondList .pContent {
+	overflow: scroll;
+}
+
+#videosList .secondList .videos, #videosOrder .ordredVids {
+	clear: both;
+}
+
+#videosList .resultsCount p,  #videosOrder .selectionCount p {
+	font-style: italic;
+	float: right;
+	margin: 0px;
+}
+
+#videosList .resultsCount p span, #videosOrder .selectionCount p span {
+	font-weight: bold;
+}
+
+#videosList .brick {
+	cursor: pointer;
+}
+
+#videosList .brick .fa {
+	display: none;
+	font-size: 110px;
+	position: absolute;
+	top: calc(50% - 55px);
+	right: calc(50% - 45px);
+	color: white;
+}
+
+#videosList .brick:hover .fa {
+	display: none;
+}
+#videosList .brick:hover .fa-plus-circle {
+	display: inline-block;
+}
+#videosList .brick:hover .name {
+	display: none;
+}
+
+#videosList .brick.selected .fa {
+	display: none;
+}
+#videosList .brick.selected .fa-check-circle {
+	display: inline-block;
+}
+#videosList .brick.selected .name {
+	display: none;
+}
+
+#videosList .brick.selected:hover .fa {
+	display: none;
+}
+#videosList .brick.selected:hover .fa-times-circle {
+	display: inline-block;
+}
+
+#videosList .brick .thumb {
+	height: 100%;
+	width: 100%;
+}
+
+#videosList .brick .name {
+	position: absolute;
+	top: calc(50% - 10px);
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+#videosList .brick .over {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#videosList .brick.selected .over {
+	background: rgba(80, 143, 195, 0.6);
+}
+
+#singleGrid .header .steps {
+	display: inline-block;
+	font-size: 20px;
+	color: white;
+	margin-top: 8px;
+	margin-left: 14px;
+}
+
+#singleGrid .header .steps .item {
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+	color: rgb(46, 162, 204);
+}
+
+#singleGrid .header .steps .item.active {
+	color: white;
+	cursor: inherit;
+}
+
+#singleGrid .header .steps .item.disabled {
+	color: gray;
+	cursor: inherit;
+}
+
+.searchDiv .sorting {
+	display: inline-block;
+	float: right;
+	margin-top: 3px;
+}
+
+.sorting .sort {
+	display: inline-block;
+	margin-left: 30px;
+	height: 24px;
+    vertical-align: bottom;
+}
+
+#videosList .refreshVideos p {
+	float: right;
+	cursor: pointer;
+	font-size: 13px;
+	margin: 0;
+	font-style: italic;
+}
+
+#videosList .refreshVideos p:hover {
+	color: rgb(80, 143, 195);
+}
+
+.sorting .selectText {
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+}
+
+.sorting .unselectAll, .sorting .selectAll {
+	display: inline-block;
+	margin-left: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.sorting p {
+	display: inline-block;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.sorting img {
+	height: 22px;
+}
+
+.sorting .order {
+	display: inline-block;
+	margin-left: 30px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.sorting .fa-sort-asc {
+	position: relative;
+	top: 5px;
+}
+
+.sorting .fa-sort-desc {
+	position: relative;
+	top: -2px;
+}
+
+.sorting .order.active {
+	color: rgb(80, 143, 195);
+}
+
+.spinnerDiv {
+	text-align: center;
+	font-size: 7em;
+	margin-top: 35px;
+}
+
+#previewDiv {
+	display: none;
+}
+
+.spinnerDiv.preLoad {
+	margin-top: 0;
+	height: 400px;
+	padding-top: 50px;
+}
+
+.tagsModal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+	z-index: 100;
+}
+
+.tagsModal .modal-content {
+	max-width: 500px;
+	min-width: 300px;
+	width: 80%;
+	margin: 10% auto;
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: center;
+    overflow: scroll;
+    max-height: 70%;
+}
+
+.tagsModal .modal-content table {
+	width: 100%;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.tagsModal .modal-content table td {
+	width: 33.3333%;
+}
+
+.tagsModal .modal-content .save {
+	margin-right: 20px;
+}
+
+#videosList .refreshVideos p.disabled {
+	color: gray;
+}
+
+.directorsPage table.addOne, .directorsPage table.listContent {
+	width: 100%;
+	max-width: 500px;
+	font-size: 18px;
+}
+
+.directorsPage .import {
+	margin-right: 10px;
+}
+
+.directorsPage table.listContent .header {
+	font-weight: bold;
+	font-size: 20px;
+	height: 35px;
+}
+
+.directorsPage table.listContent tr.data {
+	height: 30px;
+}
+
+.directorsPage table.listContent tr.editError {
+	color: red;
+	display: none;
+}
+
+.directorsPage table.listContent td {
+	width: 50%;
+}
+
+.directorsPage table.listContent td input {
+	width: 80%;
+}
+
+.directorsPage table.listContent td.actions {
+	width: 70px;
+}
+
+.directorsPage table.listContent td.actions .edit, .directorsPage table.listContent td.actions .cancel {
+	float: right;
+}
+
+.directorsPage table.listContent td.actions .fa {
+	cursor: pointer;
+}
+
+.directorsPage table.listContent td.actions .second {
+	display: none;
+}
+
+.directorsPage table.listContent input {
+	display: none;
+}
+
+.addError {
+	color: red;
+	display: none;
+}
+
+form#importForm {
+	position: fixed;
+	left: -1000px;
+}
+
+.importError {
+	color: red;
+	display: none;
+}
+
+.exportLink {
+	position: fixed;
+	left: -1000px;
+}
+
+.refresh_modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+}
+
+.refresh_modal .modal-content {
+	width: 500px;
+	margin: 100px auto;
+	background-color: white;
+	padding: 20px;
+}
+
+.refresh_modal .modal-content .progBar {
+	height: 30px;
+	background-color: gray;
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.refresh_modal .modal-content .progBar div {
+	height: 30px;
+	position: absolute;
+	background-color: #2ecc71;
+}
+
+.refresh_modal .modal-content .progBar p {
+	margin: 0;
+	font-size: 20px;
+	text-align: center;
+	color: #2c3e50;
+}
+
+#account-popup .fa-spinner {
+	font-size: 50px;
+    margin: 50px auto;
+}
+
+#wp_video_gallery_daez {
+    background: beige;
+    width: 800px;
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+    margin: 10px auto 20px auto;
+    color: #54546f;
+    max-width: 80%;
+}
+
+#wp_video_gallery_daez_ex {
+    background: #e24f4f;
+    width: 90%;
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+    margin: 10px auto 20px auto;
+    color: #f4f4ff;
+}
+
+#singleGrid .portfolio-title {
+	border: none;
+    padding: 6px 8px;
+    font-size: 16px;
+}
+.mfp-wrap {
+	z-index: 1000000;
+}
+
+.mfp-bg {
+	z-index: 999999;
+}
+
+.catalog .sections {
+	float: left;
+    width: 100%;
+}
+
+.catalog .navigation {
+    margin: 40px 0 20px 0;
+}
+
+.catalog .navigation .nav.active {
+	background: #8cbdd5;
+}
+
+.catalog .navigation .nav {
+	position: relative;
+	width: 200px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 5px;
+	display: inline-block;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background: #e0e0e0;
+}
+
+.catalog .navigation .nav span.over-tab-count {
+    position: absolute;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    top: -10px;
+    background: #17445a;
+    border-radius: 50%;
+    color: white;
+    line-height: 30px;
+    font-style: italic;
+}
+
+.catalog .navigation .vimeo-nav {
+	margin-right: 20px;
+}
+
+.catalog .navigation h2 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.catalog .navigation img {
+    width: 100px;
+    vertical-align: middle;
+}
+
+.catalog .sections .youtube-section {
+	display: none;
+}
+
+#previewDiv .display-trigger {
+	margin-top: 10px;
+}
+
+/*** RESPONSIVE ****/
+@media (max-width: 767px) {
+	#previewDiv .firstList {
+		width: 100%;
+	}
+	#videosList .firstList {
+		display: none;
+	}
+	#singleGrid .filtersList, .metaTag, #singleGrid .accordion {
+		width: 100%;
+	}
+	#videosList .secondList, #previewDiv .secondList {
+		width: 100%;
+		margin-left: 0px;
+	}
+	#videosOrder .brick .rank {
+		width: 30px;
+	}
+	#videosOrder .brick .thumb {
+		margin-right: 0px;
+	}
+	#videosOrder .brick .name {
+		display: none;
+	}
+	#singleGrid h1 a.page-title-action {
+		margin-top: 15px;
+		margin-left: 0px;
+		display: inline-block;
+	}
+	#wp_video_gallery-account .vimeoPrivateBox {
+		width: 90%;
+		margin-left: 5%;
+		margin-bottom: 20px;
+	}
+	#wp_video_gallery-account .youtubePrivateBox {
+		width: 100%;
+		width: 90%;
+		margin-left: 5%;
+	}
+	#wp_video_gallery-account .public, #wp_video_gallery-account .private, #wp_video_gallery-account .youtube {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 0;
+	}
+}

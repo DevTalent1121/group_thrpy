@@ -1,0 +1,215 @@
+div[class^=gridContainer-] {
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+.brick {
+	opacity: 0;
+}
+
+div[class^=gridContainer-] .videosListFront .brick .thumb {
+	height: 100%;
+	width: 100%;
+}
+
+div[class^=gridContainer-] .videosListFront .brick .over {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.15);
+}
+
+div[class^=gridContainer-] .videosListFront .brick .name {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: transparent;
+	text-align: center;
+	color: white;
+	margin: 0;
+	cursor: pointer;
+	min-width: 0px !important;
+	min-height: 0px !important;
+}
+
+div[class^=gridContainer-] .videosListFront .brick .name tr {
+	background: transparent;
+	border: none;
+}
+
+div[class^=gridContainer-] .videosListFront .brick .name td {
+	border: none;
+	vertical-align: middle;
+	background: transparent;
+	padding: 0;
+}
+
+div[class^=gridContainer-] .videosListFront .brick .name .parent {
+	font-size: 16px;
+	line-height: 24px;
+	color: black;
+	height: 60%;
+	margin: 0 auto;
+	position: relative;
+	cursor: pointer;
+	background: none;
+	border: none;
+	min-width: 0px;
+}
+
+div[class^=gridContainer-] .videosListFront .brick .name p {
+	z-index: 2;
+	position: relative;
+	color: white;
+	margin: 0;
+	padding: 7px;
+	word-break: break-word;
+}
+
+div[class^=gridContainer-] .videosListFront .brick .name:hover .parent p {
+	color: black;
+}
+
+div[class^=gridContainer-] .videosListFront .brick .name p strong{
+	display: block;
+}
+
+div[class^=gridContainer-] .videosListFront .brick .name:hover .parent, div[class^=gridContainer-] .videosListFront .brick .name .parent {
+	background-color: white;
+	border-radius: 5px;
+	-webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+div[class^=gridContainer-] .videosListFront .brick .name .parent p {
+	-webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+
+div[class^=gridContainer-] .videosListFront .brick {
+	width: 150px;
+	height: 85px;
+	padding: 0;
+}
+
+div[class^=gridContainer-] .videosListFront .brick[data-state="init"] {
+	display: none;
+}
+
+div[class^=gridContainer-] .videosListFront .brick[data-state="start"] {
+	display: block;
+}
+
+div[class^=gridContainer-] .videosListFront .brick[data-state="move"] {
+	transition: top 0.5s, left 0.5s, width 0.5s, height 0.5s;
+	-webkit-transition: top 0.5s, left 0.5s, width 0.5s, height 0.5s;
+}
+
+div[class^=gridContainer-] .videosListFront .highlight {
+	width: 300px;
+	height: 170px;
+}
+
+div[class^=gridContainer-] .videosListFront .highlight .name .parent {
+	font-size: 30px;
+	line-height: 45px;
+}
+
+div[class^=gridContainer-] .tags.topTags {
+	text-align: center;
+  	line-height: 30px;
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	font-size: 15px;
+	text-transform: capitalize;
+}
+
+div[class^=gridContainer-] .tags.topTags div[class^="check-"] {
+	display: inline-block;
+	margin: 0 8px;
+}
+
+div[class^=gridContainer-] .tags div[class^="check-"] .checkboxContainer {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	position: relative;
+	top: 3px;
+	vertical-align: top;
+}
+
+div[class^=gridContainer-] .tags div[class^="check-"] .checkboxContainer svg {
+	position: absolute;
+}
+
+div[class^=gridContainer-] .tags div[class^="check-"] .checkboxContainer svg.checked {
+	display: none;
+}
+
+div[class^=gridContainer-] .tags div[class^="check-"] .checkboxContainer.checked svg.checked {
+	display: block;
+}
+
+div[class^=gridContainer-] .tags div[class^="check-"] .checkboxContainer.checked svg.unchecked {
+	display: none;
+}
+
+div[class^=gridContainer-] .tags.topTags div[class^="check-"] .checkboxContainer {
+	top: 10px;
+}
+
+div[class^=gridContainer-] .tags div[class^="check-"] .checkboxContainer input {
+	opacity: 0;
+	vertical-align: top;
+	margin: 0;
+	cursor: pointer;
+}
+
+div[class^=gridContainer-] .tags.leftTags {
+	width: calc(25% - 10px);
+	vertical-align: top;
+	margin-right: 15px;
+	font-size: 15px;
+	text-transform: capitalize;
+	display: inline-block;
+}
+
+div[class^=gridContainer-] .tags.rightTags {
+	width: calc(25% - 10px);
+	vertical-align: top;
+	margin-left: 15px;
+	font-size: 15px;
+	text-transform: capitalize;
+	display: inline-block;
+}
+
+div[class^=gridContainer-] .tags.leftTags div[class^="check-"], div[class^=gridContainer-] .tags.rightTags div[class^="check-"] {
+	display: block;
+	margin: 8px;
+}
+
+div[class^=gridContainer-] .videosListFront.leftTags, div[class^=gridContainer-] .videosListFront.rightTags {
+	width: calc(75% - 10px);
+	display: inline-block;
+}
+
+div[class^=gridContainer-] .tags span {
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.pagerImage img {
+	position: absolute;
+	display: none;
+}
