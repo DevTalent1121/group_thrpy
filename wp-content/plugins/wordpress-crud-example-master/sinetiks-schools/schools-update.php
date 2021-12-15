@@ -2,7 +2,7 @@
 
 function group_thrpy_update() {
     global $wpdb;
-    $table_name = $wpdb->prefix . "school";
+    $table_name = $wpdb->prefix . "projects";
     $id = $_GET["id"];
     $name = $_POST["name"];
 //update
@@ -19,23 +19,23 @@ function group_thrpy_update() {
     else if (isset($_POST['delete'])) {
         $wpdb->query($wpdb->prepare("DELETE FROM $table_name WHERE id = %s", $id));
     } else {//selecting value to update	
-        $schools = $wpdb->get_results($wpdb->prepare("SELECT id,name from $table_name where id=%s", $id));
-        foreach ($schools as $s) {
+        $works = $wpdb->get_results($wpdb->prepare("SELECT id,name from $table_name where id=%s", $id));
+        foreach ($works as $s) {
             $name = $s->name;
         }
     }
     ?>
-    <link type="text/css" href="<?php echo WP_PLUGIN_URL; ?>/sinetiks-schools/style-admin.css" rel="stylesheet" />
+    <link type="text/css" href="<?php echo WP_PLUGIN_URL; ?>/group_thrpy/style-admin.css" rel="stylesheet" />
     <div class="wrap">
-        <h2>Schools</h2>
+        <h2>works</h2>
 
         <?php if ($_POST['delete']) { ?>
-            <div class="updated"><p>School deleted</p></div>
-            <a href="<?php echo admin_url('admin.php?page=group_thrpy_list') ?>">&laquo; Back to schools list</a>
+            <div class="updated"><p>work deleted</p></div>
+            <a href="<?php echo admin_url('admin.php?page=group_thrpy_list') ?>">&laquo; Back to works list</a>
 
         <?php } else if ($_POST['update']) { ?>
-            <div class="updated"><p>School updated</p></div>
-            <a href="<?php echo admin_url('admin.php?page=group_thrpy_list') ?>">&laquo; Back to schools list</a>
+            <div class="updated"><p>work updated</p></div>
+            <a href="<?php echo admin_url('admin.php?page=group_thrpy_list') ?>">&laquo; Back to works list</a>
 
         <?php } else { ?>
             <form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>">

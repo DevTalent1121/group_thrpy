@@ -862,7 +862,7 @@
 		}
 
 		// In case we are not accessing the image editor in the context of a View,
-		// close the editor the old-school way.
+		// close the editor the old-work way.
 		else {
 			$('#image-editor-' + postid).fadeOut('fast', function() {
 				$( '#media-head-' + postid ).fadeIn( 'fast', function() {

@@ -39,15 +39,15 @@ Take your time and perform all operations: _select, insert, update and delete_
 
 ## Customize the code
 
-If yout take a look at the code you’ll see that every function has a prefix “**sinetiks**” and the name of the table “**schools**“. This is because you need to create a namespace to avoid duplicated function names.
+If yout take a look at the code you’ll see that every function has a prefix “**sinetiks**” and the name of the table “**works**“. This is because you need to create a namespace to avoid duplicated function names.
 
 ![prefix](https://laloah.files.wordpress.com/2013/06/prefix.png?w=625)
 
-(The name “sinetiks” is the name of [my company](http://sinetiks.com "sinetiks.com") and “schools” the name of the table to manage)
+(The name “sinetiks” is the name of [my company](http://sinetiks.com "sinetiks.com") and “works” the name of the table to manage)
 
 How to modify the code to manage another table:
 
-*   **Replace** “sinetiks” with your company name and “school” with the table name
+*   **Replace** “sinetiks” with your company name and “work” with the table name
 *   Replace the columns ID and NAME with your columns
 *   Modify the html forms
 

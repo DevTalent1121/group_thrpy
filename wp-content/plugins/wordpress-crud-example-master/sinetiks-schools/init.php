@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Schools
+Plugin Name: works
 Description:
 Version: 1
 Author: sinetiks.com
@@ -11,7 +11,7 @@ function ss_options_install() {
 
     global $wpdb;
 
-    $table_name = $wpdb->prefix . "school";
+    $table_name = $wpdb->prefix . "projects";
     $charset_collate = $wpdb->get_charset_collate();
     $sql = "CREATE TABLE $table_name (
             `id` varchar(3) CHARACTER SET utf8 NOT NULL,
@@ -31,8 +31,8 @@ add_action('admin_menu','group_thrpy_modifymenu');
 function group_thrpy_modifymenu() {
 	
 	//this is the main item for the menu
-	add_menu_page('Schools', //page title
-	'Schools', //menu title
+	add_menu_page('works', //page title
+	'works', //menu title
 	'manage_options', //capabilities
 	'group_thrpy_list', //menu slug
 	'group_thrpy_list' //function
@@ -40,7 +40,7 @@ function group_thrpy_modifymenu() {
 	
 	//this is a submenu
 	add_submenu_page('group_thrpy_list', //parent slug
-	'Add New School', //page title
+	'Add New work', //page title
 	'Add New', //menu title
 	'manage_options', //capability
 	'group_thrpy_create', //menu slug
@@ -48,13 +48,13 @@ function group_thrpy_modifymenu() {
 	
 	//this submenu is HIDDEN, however, we need to add it anyways
 	add_submenu_page(null, //parent slug
-	'Update School', //page title
+	'Update work', //page title
 	'Update', //menu title
 	'manage_options', //capability
 	'group_thrpy_update', //menu slug
 	'group_thrpy_update'); //function
 }
 define('ROOTDIR', plugin_dir_path(__FILE__));
-require_once(ROOTDIR . 'schools-list.php');
-require_once(ROOTDIR . 'schools-create.php');
-require_once(ROOTDIR . 'schools-update.php');
+require_once(ROOTDIR . 'works-list.php');
+require_once(ROOTDIR . 'works-create.php');
+require_once(ROOTDIR . 'works-update.php');

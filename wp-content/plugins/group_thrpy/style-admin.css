@@ -3,3 +3,7 @@
 .ss-form-width {width:100%}
 .ss-th-width {width:25%}
 .ss-field-width {width:75%}
+.wrap.work_list_div{
+    overflow: scroll;
+    width:100%;
+}
