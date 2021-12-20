@@ -16,11 +16,11 @@
 		</div><!-- #primary -->
 	</div><!-- #content -->
 
-	<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
+	<?php //get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
-		<?php if ( has_nav_menu( 'footer' ) ) : ?>
+		<!-- <?php if ( has_nav_menu( 'footer' ) ) : ?>
 			<nav aria-label="<?php esc_attr_e( 'Secondary menu', 'twentytwentyone' ); ?>" class="footer-navigation">
 				<ul class="footer-navigation-wrapper">
 					<?php
@@ -36,11 +36,11 @@
 						)
 					);
 					?>
-				</ul><!-- .footer-navigation-wrapper -->
+				</ul>--><!-- .footer-navigation-wrapper -->
 			</nav><!-- .footer-navigation -->
-		<?php endif; ?>
+		<!-- <?php endif; ?>  -->
 		<div class="site-info">
-			<div class="site-name">
+			<!-- <div class="site-name">
 				<?php if ( has_custom_logo() ) : ?>
 					<div class="site-logo"><?php the_custom_logo(); ?></div>
 				<?php else : ?>
@@ -52,8 +52,8 @@
 						<?php endif; ?>
 					<?php endif; ?>
 				<?php endif; ?>
-			</div><!-- .site-name -->
-			<div class="powered-by">
+			</div>--><!-- .site-name -->
+			<!--<div class="powered-by">
 				<?php
 				printf(
 					/* translators: %s: WordPress. */
@@ -61,11 +61,17 @@
 					'<a href="' . esc_url( __( 'https://wordpress.org/', 'twentytwentyone' ) ) . '">WordPress</a>'
 				);
 				?>
-			</div><!-- .powered-by -->
-
+			</div>--><!-- .powered-by -->
+		
+			<div class="email_name">
+			info@groupthrpy.com
+			</div>
+			<div class="site_identity">
+			@groupthrpy
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
-
+ 
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
