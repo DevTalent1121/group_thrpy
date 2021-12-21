@@ -14,8 +14,10 @@
             // array_push($name_arr,$row->short_title);
             $video_id = get_video_id($row->video_url);
             // $name_arr[$video_id] = $row->short_title;
-            array_push($name_arr,$row->short_title);
-            array_push($video_id_arr,$video_id);
+            // array_push($name_arr,$row->short_title);
+            // array_push($video_id_arr,$video_id);
+            $name_arr[$row->id] = $row->short_title;
+            $video_id_arr[$row->id] = $video_id;
             // var_dump($video_id."->".$row->short_title);
         }
         if(isset($row->video_url))
@@ -45,10 +47,10 @@
 ?>
 <div class="div_container">
     <?php
-    foreach($name_arr as $key=>$short_name){
+        foreach($name_arr as $key=>$short_name){
         $tmp_arr = explode(" ",$row->short_title);
         $prefix_str = strtolower($tmp_arr[0]);
-        echo "<a href='/rem-ariana-grande' data-video='".$video_id_arr[$key]."' id='".$video_id_arr[$key]."' class='dc_project'> $short_name</a>";
+        echo "<a href='".get_site_url()."/single-work?id=".$key."' data-video='".$video_id_arr[$key]."' id='".$video_id_arr[$key]."' class='dc_project'> $short_name</a>";
     }
     ?>
   <!-- <a href="/rem-ariana-grande" data-video="aime" id="aime" class="dc_project"> Aime Leon Dore </a>

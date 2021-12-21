@@ -9,7 +9,7 @@ Description: Twenty Twenty-One is a blank canvas for your ideas and it makes the
 Requires at least: 5.3
 Tested up to: 5.8
 Requires PHP: 5.6
-Version: 1.4
+Version: 1.4.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: twentytwentyone
@@ -6045,10 +6045,22 @@ footer {
   	top:50%;
 }
 .background-video.active{
-    display:block;
+    /* display:block; */
+    -webkit-animation: fadeOut 1s;
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+     opacity: 1;
+}
+body{
+    -webkit-animation: fadeOut 1s;
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+
 }
 .background-video{
-    display:none;
+    /* display:none; */
+     opacity: 0;
+
     position: fixed;
     top: 0;
     transform:scale(1.02);
@@ -6108,4 +6120,45 @@ body{
 		display:block;
 		padding-bottom:0px;
     }
+}
+.site-title a{
+	text-decoration: none;
+}
+
+/*********Individual Work page*****************/
+#page .video_div{
+	margin-bottom: 0px;
+	/* width: calc(100% - 450px); */
+	width:500px;
+	margin: auto;
+}
+#page .video_content{
+	/* width: calc(100% - 450px); */
+	width:500px;
+	margin: auto;
+	margin-top:10px;
+	font-size:1rem;
+	line-height: 1.2;
+}
+@media only screen and (max-width: 500px) {
+	#page .video_div
+	{
+		width: 80%;
+		font-size:1rem;
+		font:-webkit-control;
+	}
+	#page .video_content{
+		font:-webkit-small-control;
+		width: 80%;
+	}
+	.video_box{
+		/* max-width: 80% !important; */
+		max-height: 200px !important;
+	}
+}
+@media only screen and (max-width: 350px) {
+	.video_box{
+		/* max-width: 60% !important; */
+		max-height: 150px !important;
+	}
 }
