@@ -11,9 +11,10 @@ function ss_options_install() {
 
     global $wpdb;
 
-    $table_name = $wpdb->prefix . "projects";
+    $table_works = $wpdb->prefix . "group_thrpy_projects";
+    $table_directors = $wpdb->prefix . "group_thrpy_directors";
     $charset_collate = $wpdb->get_charset_collate();
-    $sql = "CREATE TABLE $table_name (  
+    $sql = "CREATE TABLE $table_works (  
 		`id` INT NOT NULL AUTO_INCREMENT,
 		`title` TINYTEXT,
 		`short_title` TINYTEXT,
@@ -33,6 +34,13 @@ function ss_options_install() {
 		`hair` TINYTEXT,
 		`manicurist` TINYTEXT,
 		`VFX_supervisor` TINYTEXT,
+		PRIMARY KEY (`id`)
+	  ) CHARSET=utf8 COLLATE=utf8_unicode_ci;
+	   ".
+	   "CREATE TABLE $table_directors (  
+		`id` INT NOT NULL AUTO_INCREMENT,
+		`s_id` TINYTEXT,
+		`name` TINYTEXT,
 		PRIMARY KEY (`id`)
 	  ) CHARSET=utf8 COLLATE=utf8_unicode_ci;
 	   ";
@@ -63,6 +71,22 @@ function group_thrpy_modifymenu() {
 	'manage_options', //capability
 	'group_thrpy_create', //menu slug
 	'group_thrpy_create'); //function
+
+	//this is a submenu Manage Directors
+	add_submenu_page('group_thrpy_list', //parent slug
+	'Directors', //page title
+	'Directors', //menu title
+	'manage_options', //capability
+	'group_thrpy_directors', //menu slug
+	'group_thrpy_directors'); //function
+
+	//this submenu is HIDDEN, however, we need to add it anyways
+	add_submenu_page(null, //parent slug
+	'Update Director', //page title
+	'Update', //menu title
+	'manage_options', //capability
+	'group_thrpy_director_update', //menu slug
+	'group_thrpy_director_update'); //function
 	
 	//this submenu is HIDDEN, however, we need to add it anyways
 	add_submenu_page(null, //parent slug
@@ -73,6 +97,8 @@ function group_thrpy_modifymenu() {
 	'group_thrpy_update'); //function
 }
 define('ROOTDIR', plugin_dir_path(__FILE__));
-require_once(ROOTDIR . 'works-list.php');
-require_once(ROOTDIR . 'works-create.php');
-require_once(ROOTDIR . 'works-update.php');
+require_once(ROOTDIR . 'works/works-list.php');
+require_once(ROOTDIR . 'works/works-create.php');
+require_once(ROOTDIR . 'works/works-update.php');
+require_once(ROOTDIR . 'directors/group_thrpy_directors.php');
+require_once(ROOTDIR . 'directors/group_thrpy_director_update.php');

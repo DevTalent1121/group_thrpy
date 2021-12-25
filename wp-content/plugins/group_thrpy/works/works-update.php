@@ -2,7 +2,7 @@
 
 function group_thrpy_update() {
     global $wpdb;
-    $table_name = $wpdb->prefix . "projects";
+    $table_name = $wpdb->prefix . "group_thrpy_projects";
     $id = $_GET["id"];
     
     $title = $_POST["title"];
@@ -66,6 +66,7 @@ function group_thrpy_update() {
             $video_url = $s->video_url;
             $cd = $s->cd;
             $director = $s->director;
+
             $executive_producers = $s->executive_producers;
             $produced_by = $s->produced_by;
             $producer = $s->producer;
@@ -118,7 +119,27 @@ function group_thrpy_update() {
                     </tr>
                     <tr>
                         <th class="ss-th-width">Director</th>
-                        <td><input type="text" name="director" value="<?php echo $director; ?>" class="ss-field-width" /></td>
+                        <td>
+                            <select name="director" id="director" class="ss-field-width">
+                                <option></option>
+                                <?php
+                                    global $wpdb;
+                                    $table_name_director = $wpdb->prefix . "group_thrpy_directors";
+                                    $rows = $wpdb->get_results("SELECT * from $table_name_director");
+                                    // $arr_directors = array();
+                                    foreach($rows as $row){
+                                        // $arr_directors[$row->id] = $row->s_id;
+                                        if($director==$row->id){
+                                            echo "<option selected value='".$row->id."'>".$row->s_id."</option>";
+                                        }
+                                        else{
+                                            echo "<option value='".$row->id."'>".$row->s_id."</option>";
+                                        }
+                                    }
+
+                                ?>
+                            </select>
+                        </td>
                     </tr>
                     <tr>
                         <th class="ss-th-width">Executive Producers</th>
@@ -171,7 +192,7 @@ function group_thrpy_update() {
 
                 </table>
                 <input type='submit' name="update" value='Save' class='button'> &nbsp;&nbsp;
-                <input type='submit' name="delete" value='Delete' class='button' onclick="return confirm('&iquest;Est&aacute;s seguro de borrar este elemento?')">
+                <input type='submit' name="delete" value='Delete' class='button' onclick="return confirm('Confirm to Delete?')">
             </form>
         <?php } ?>
 
