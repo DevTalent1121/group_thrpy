@@ -6,7 +6,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  */
 
 // This theme requires WordPress 5.3 or later.
@@ -22,7 +22,7 @@ if ( ! function_exists( 'twenty_twenty_one_setup' ) ) {
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Group Thrpy 1.0
 	 *
 	 * @return void
 	 */
@@ -30,7 +30,7 @@ if ( ! function_exists( 'twenty_twenty_one_setup' ) ) {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Twenty Twenty-One, use a find and replace
+		 * If you're building a theme based on Group Thrpy, use a find and replace
 		 * to change 'twentytwentyone' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'twentytwentyone', get_template_directory() . '/languages' );
@@ -345,7 +345,7 @@ add_action( 'after_setup_theme', 'twenty_twenty_one_setup' );
 /**
  * Register widget area.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  *
@@ -372,7 +372,7 @@ add_action( 'widgets_init', 'twenty_twenty_one_widgets_init' );
  *
  * Priority 0 to make it available to lower priority callbacks.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @global int $content_width Content width.
  *
@@ -389,7 +389,7 @@ add_action( 'after_setup_theme', 'twenty_twenty_one_content_width', 0 );
 /**
  * Enqueue scripts and styles.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @return void
  */
@@ -399,17 +399,17 @@ function twenty_twenty_one_scripts() {
 	global $is_IE, $wp_scripts;
 	if ( $is_IE ) {
 		// If IE 11 or below, use a flattened stylesheet with static values replacing CSS Variables.
-		wp_enqueue_style( 'twenty-twenty-one-style', get_template_directory_uri() . '/assets/css/ie.css', array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( 'group-thrpy-style', get_template_directory_uri() . '/assets/css/ie.css', array(), wp_get_theme()->get( 'Version' ) );
 	} else {
 		// If not IE, use the standard stylesheet.
-		wp_enqueue_style( 'twenty-twenty-one-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style( 'group-thrpy-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 	}
 
 	// RTL styles.
-	wp_style_add_data( 'twenty-twenty-one-style', 'rtl', 'replace' );
+	wp_style_add_data( 'group-thrpy-style', 'rtl', 'replace' );
 
 	// Print styles.
-	wp_enqueue_style( 'twenty-twenty-one-print-style', get_template_directory_uri() . '/assets/css/print.css', array(), wp_get_theme()->get( 'Version' ), 'print' );
+	wp_enqueue_style( 'group-thrpy-print-style', get_template_directory_uri() . '/assets/css/print.css', array(), wp_get_theme()->get( 'Version' ), 'print' );
 
 	// Threaded comment reply styles.
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -418,7 +418,7 @@ function twenty_twenty_one_scripts() {
 
 	// Register the IE11 polyfill file.
 	wp_register_script(
-		'twenty-twenty-one-ie11-polyfills-asset',
+		'group-thrpy-ie11-polyfills-asset',
 		get_template_directory_uri() . '/assets/js/polyfills.js',
 		array(),
 		wp_get_theme()->get( 'Version' ),
@@ -427,18 +427,18 @@ function twenty_twenty_one_scripts() {
 
 	// Register the IE11 polyfill loader.
 	wp_register_script(
-		'twenty-twenty-one-ie11-polyfills',
+		'group-thrpy-ie11-polyfills',
 		null,
 		array(),
 		wp_get_theme()->get( 'Version' ),
 		true
 	);
 	wp_add_inline_script(
-		'twenty-twenty-one-ie11-polyfills',
+		'group-thrpy-ie11-polyfills',
 		wp_get_script_polyfill(
 			$wp_scripts,
 			array(
-				'Element.prototype.matches && Element.prototype.closest && window.NodeList && NodeList.prototype.forEach' => 'twenty-twenty-one-ie11-polyfills-asset',
+				'Element.prototype.matches && Element.prototype.closest && window.NodeList && NodeList.prototype.forEach' => 'group-thrpy-ie11-polyfills-asset',
 			)
 		)
 	);
@@ -446,9 +446,9 @@ function twenty_twenty_one_scripts() {
 	// Main navigation scripts.
 	if ( has_nav_menu( 'primary' ) ) {
 		wp_enqueue_script(
-			'twenty-twenty-one-primary-navigation-script',
+			'group-thrpy-primary-navigation-script',
 			get_template_directory_uri() . '/assets/js/primary-navigation.js',
-			array( 'twenty-twenty-one-ie11-polyfills' ),
+			array( 'group-thrpy-ie11-polyfills' ),
 			wp_get_theme()->get( 'Version' ),
 			true
 		);
@@ -456,9 +456,9 @@ function twenty_twenty_one_scripts() {
 
 	// Responsive embeds script.
 	wp_enqueue_script(
-		'twenty-twenty-one-responsive-embeds-script',
+		'group-thrpy-responsive-embeds-script',
 		get_template_directory_uri() . '/assets/js/responsive-embeds.js',
-		array( 'twenty-twenty-one-ie11-polyfills' ),
+		array( 'group-thrpy-ie11-polyfills' ),
 		wp_get_theme()->get( 'Version' ),
 		true
 	);
@@ -468,7 +468,7 @@ add_action( 'wp_enqueue_scripts', 'twenty_twenty_one_scripts' );
 /**
  * Enqueue block editor script.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @return void
  */
@@ -485,7 +485,7 @@ add_action( 'enqueue_block_editor_assets', 'twentytwentyone_block_editor_script'
  * This does not enqueue the script because it is tiny and because it is only for IE11,
  * thus it does not warrant having an entire dedicated blocking script being loaded.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @link https://git.io/vWdr2
  */
@@ -510,7 +510,7 @@ add_action( 'wp_print_footer_scripts', 'twenty_twenty_one_skip_link_focus_fix' )
 /**
  * Enqueue non-latin language styles.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @return void
  */
@@ -518,16 +518,16 @@ function twenty_twenty_one_non_latin_languages() {
 	$custom_css = twenty_twenty_one_get_non_latin_css( 'front-end' );
 
 	if ( $custom_css ) {
-		wp_add_inline_style( 'twenty-twenty-one-style', $custom_css );
+		wp_add_inline_style( 'group-thrpy-style', $custom_css );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'twenty_twenty_one_non_latin_languages' );
 
 // SVG Icons class.
-require get_template_directory() . '/classes/class-twenty-twenty-one-svg-icons.php';
+require get_template_directory() . '/classes/class-group-thrpy-svg-icons.php';
 
 // Custom color classes.
-require get_template_directory() . '/classes/class-twenty-twenty-one-custom-colors.php';
+require get_template_directory() . '/classes/class-group-thrpy-custom-colors.php';
 new Twenty_Twenty_One_Custom_Colors();
 
 // Enhance the theme by hooking into WordPress.
@@ -540,7 +540,7 @@ require get_template_directory() . '/inc/menu-functions.php';
 require get_template_directory() . '/inc/template-tags.php';
 
 // Customizer additions.
-require get_template_directory() . '/classes/class-twenty-twenty-one-customize.php';
+require get_template_directory() . '/classes/class-group-thrpy-customize.php';
 new Twenty_Twenty_One_Customize();
 
 // Block Patterns.
@@ -550,13 +550,13 @@ require get_template_directory() . '/inc/block-patterns.php';
 require get_template_directory() . '/inc/block-styles.php';
 
 // Dark Mode.
-require_once get_template_directory() . '/classes/class-twenty-twenty-one-dark-mode.php';
+require_once get_template_directory() . '/classes/class-group-thrpy-dark-mode.php';
 new Twenty_Twenty_One_Dark_Mode();
 
 /**
  * Enqueue scripts for the customizer preview.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @return void
  */
@@ -582,7 +582,7 @@ add_action( 'customize_preview_init', 'twentytwentyone_customize_preview_init' )
 /**
  * Enqueue scripts for the customizer.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @return void
  */
@@ -601,7 +601,7 @@ add_action( 'customize_controls_enqueue_scripts', 'twentytwentyone_customize_con
 /**
  * Calculate classes for the main <html> element.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @return void
  */
@@ -609,7 +609,7 @@ function twentytwentyone_the_html_classes() {
 	/**
 	 * Filters the classes for the main <html> element.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Group Thrpy 1.0
 	 *
 	 * @param string The list of classes. Default empty string.
 	 */
@@ -623,7 +623,7 @@ function twentytwentyone_the_html_classes() {
 /**
  * Add "is-IE" class to body if the user is on Internet Explorer.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @return void
  */

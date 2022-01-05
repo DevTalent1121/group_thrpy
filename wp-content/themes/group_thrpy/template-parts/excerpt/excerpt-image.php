@@ -6,7 +6,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  */
 
 // If there is no featured-image, print the first image block found.

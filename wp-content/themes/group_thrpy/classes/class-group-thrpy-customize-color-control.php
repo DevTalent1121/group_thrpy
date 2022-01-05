@@ -4,13 +4,13 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  */
 
 /**
  * Customize Color Control class.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @see WP_Customize_Control
  */
@@ -18,16 +18,16 @@ class Twenty_Twenty_One_Customize_Color_Control extends WP_Customize_Color_Contr
 	/**
 	 * The control type.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Group Thrpy 1.0
 	 *
 	 * @var string
 	 */
-	public $type = 'twenty-twenty-one-color';
+	public $type = 'group-thrpy-color';
 
 	/**
 	 * Colorpicker palette
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Group Thrpy 1.0
 	 *
 	 * @var array
 	 */
@@ -36,7 +36,7 @@ class Twenty_Twenty_One_Customize_Color_Control extends WP_Customize_Color_Contr
 	/**
 	 * Enqueue control related scripts/styles.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Group Thrpy 1.0
 	 *
 	 * @return void
 	 */
@@ -56,7 +56,7 @@ class Twenty_Twenty_One_Customize_Color_Control extends WP_Customize_Color_Contr
 	/**
 	 * Refresh the parameters passed to the JavaScript via JSON.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Group Thrpy 1.0
 	 *
 	 * @uses WP_Customize_Control::to_json()
 	 *

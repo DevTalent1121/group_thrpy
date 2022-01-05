@@ -4,13 +4,13 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  */
 
 /**
  * Adds custom classes to the array of body classes.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @param array $classes Classes for the body element.
  * @return array
@@ -40,7 +40,7 @@ add_filter( 'body_class', 'twenty_twenty_one_body_classes' );
 /**
  * Adds custom class to the array of posts classes.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @param array $classes An array of CSS classes.
  * @return array
@@ -55,7 +55,7 @@ add_filter( 'post_class', 'twenty_twenty_one_post_classes', 10, 3 );
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @return void
  */
@@ -69,7 +69,7 @@ add_action( 'wp_head', 'twenty_twenty_one_pingback_header' );
 /**
  * Remove the `no-js` class from body if JS is supported.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @return void
  */
@@ -81,7 +81,7 @@ add_action( 'wp_footer', 'twenty_twenty_one_supports_js' );
 /**
  * Changes comment form default fields.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @param array $defaults The form defaults.
  * @return array
@@ -98,7 +98,7 @@ add_filter( 'comment_form_defaults', 'twenty_twenty_one_comment_form_defaults' )
 /**
  * Determines if post thumbnail can be displayed.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @return bool
  */
@@ -106,7 +106,7 @@ function twenty_twenty_one_can_show_post_thumbnail() {
 	/**
 	 * Filters whether post thumbnail can be displayed.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Group Thrpy 1.0
 	 *
 	 * @param bool $show_post_thumbnail Whether to show post thumbnail.
 	 */
@@ -119,7 +119,7 @@ function twenty_twenty_one_can_show_post_thumbnail() {
 /**
  * Returns the size for avatars used in the theme.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @return int
  */
@@ -130,7 +130,7 @@ function twenty_twenty_one_get_avatar_size() {
 /**
  * Creates continue reading text.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  */
 function twenty_twenty_one_continue_reading_text() {
 	$continue_reading = sprintf(
@@ -145,7 +145,7 @@ function twenty_twenty_one_continue_reading_text() {
 /**
  * Creates the continue reading link for excerpt.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  */
 function twenty_twenty_one_continue_reading_link_excerpt() {
 	if ( ! is_admin() ) {
@@ -159,7 +159,7 @@ add_filter( 'excerpt_more', 'twenty_twenty_one_continue_reading_link_excerpt' );
 /**
  * Creates the continue reading link.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  */
 function twenty_twenty_one_continue_reading_link() {
 	if ( ! is_admin() ) {
@@ -174,7 +174,7 @@ if ( ! function_exists( 'twenty_twenty_one_post_title' ) ) {
 	/**
 	 * Adds a title to posts and pages that are missing titles.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Group Thrpy 1.0
 	 *
 	 * @param string $title The title.
 	 * @return string
@@ -188,7 +188,7 @@ add_filter( 'the_title', 'twenty_twenty_one_post_title' );
 /**
  * Gets the SVG code for a given icon.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @param string $group The icon group.
  * @param string $icon  The icon.
@@ -202,7 +202,7 @@ function twenty_twenty_one_get_icon_svg( $group, $icon, $size = 24 ) {
 /**
  * Changes the default navigation arrows to svg icons
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @param string $calendar_output The generated HTML of the calendar.
  * @return string
@@ -219,7 +219,7 @@ add_filter( 'get_calendar', 'twenty_twenty_one_change_calendar_nav_arrows' );
  *
  * Return CSS for non-latin language, if available, or null
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @param string $type Whether to return CSS for the "front-end", "block-editor", or "classic-editor".
  * @return string
@@ -232,7 +232,7 @@ function twenty_twenty_one_get_non_latin_css( $type = 'front-end' ) {
 	/**
 	 * Filters the fallback fonts for non-latin languages.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Group Thrpy 1.0
 	 *
 	 * @param array $font_family An array of locales and font families.
 	 */
@@ -308,7 +308,7 @@ function twenty_twenty_one_get_non_latin_css( $type = 'front-end' ) {
 	/**
 	 * Filters the elements to apply fallback fonts to.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Group Thrpy 1.0
 	 *
 	 * @param array $elements An array of elements for "front-end", "block-editor", or "classic-editor".
 	 */
@@ -345,7 +345,7 @@ function twenty_twenty_one_get_non_latin_css( $type = 'front-end' ) {
 /**
  * Print the first instance of a block in the content, and then break away.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @param string      $block_name The full block type name, or a partial match.
  *                                Example: `core/image`, `core-embed/*`.
@@ -408,8 +408,8 @@ function twenty_twenty_one_print_first_instance_of_block( $block_name, $content 
 /**
  * Retrieve protected post password form content.
  *
- * @since Twenty Twenty-One 1.0
- * @since Twenty Twenty-One 1.4 Corrected parameter name for `$output`,
+ * @since Group Thrpy 1.0
+ * @since Group Thrpy 1.4 Corrected parameter name for `$output`,
  *                              added the `$post` parameter.
  *
  * @param string      $output The password form HTML output.
@@ -430,7 +430,7 @@ add_filter( 'the_password_form', 'twenty_twenty_one_password_form', 10, 2 );
 /**
  * Filters the list of attachment image attributes.
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  *
  * @param array        $attr       Array of attribute values for the image markup, keyed by attribute name.
  *                                 See wp_get_attachment_image().

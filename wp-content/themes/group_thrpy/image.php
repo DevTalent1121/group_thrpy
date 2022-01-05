@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  */
 
 get_header();
@@ -24,7 +24,7 @@ while ( have_posts() ) {
 				/**
 				 * Filter the default image attachment size.
 				 *
-				 * @since Twenty Twenty-One 1.0
+				 * @since Group Thrpy 1.0
 				 *
 				 * @param string $image_size Image size. Default 'full'.
 				 */

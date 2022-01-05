@@ -7,7 +7,7 @@
  *
  * Learn more: https://git.io/vWdr2
  *
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  */
 ( function() {
 	var isIe = /(trident|msie)/i.test( navigator.userAgent );

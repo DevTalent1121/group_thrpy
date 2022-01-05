@@ -4,21 +4,21 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @since Group Thrpy 1.0
  */
 
 if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 	/**
 	 * Customizer Settings.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since Group Thrpy 1.0
 	 */
 	class Twenty_Twenty_One_Customize {
 
 		/**
 		 * Constructor. Instantiate the object.
 		 *
-		 * @since Twenty Twenty-One 1.0
+		 * @since Group Thrpy 1.0
 		 */
 		public function __construct() {
 			add_action( 'customize_register', array( $this, 'register' ) );
@@ -27,7 +27,7 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 		/**
 		 * Register customizer options.
 		 *
-		 * @since Twenty Twenty-One 1.0
+		 * @since Group Thrpy 1.0
 		 *
 		 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
 		 * @return void
@@ -113,7 +113,7 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 
 			// Background color.
 			// Include the custom control class.
-			include_once get_theme_file_path( 'classes/class-twenty-twenty-one-customize-color-control.php' ); // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
+			include_once get_theme_file_path( 'classes/class-group-thrpy-customize-color-control.php' ); // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound
 
 			// Register the custom control.
 			$wp_customize->register_control_type( 'Twenty_Twenty_One_Customize_Color_Control' );
@@ -146,7 +146,7 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 		/**
 		 * Sanitize boolean for checkbox.
 		 *
-		 * @since Twenty Twenty-One 1.0
+		 * @since Group Thrpy 1.0
 		 *
 		 * @param bool $checked Whether or not a box is checked.
 		 * @return bool
@@ -158,7 +158,7 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 		/**
 		 * Render the site title for the selective refresh partial.
 		 *
-		 * @since Twenty Twenty-One 1.0
+		 * @since Group Thrpy 1.0
 		 *
 		 * @return void
 		 */
@@ -169,7 +169,7 @@ if ( ! class_exists( 'Twenty_Twenty_One_Customize' ) ) {
 		/**
 		 * Render the site tagline for the selective refresh partial.
 		 *
-		 * @since Twenty Twenty-One 1.0
+		 * @since Group Thrpy 1.0
 		 *
 		 * @return void
 		 */

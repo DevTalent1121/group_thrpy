@@ -13,6 +13,6 @@ Group Thrpy theme is a blank canvas for your ideas and it makes the block editor
 
 With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine.
 
-Take it for a spin! See how Twenty Twenty-One elevates your portfolio, business website, or personal blog.
+Take it for a spin! See how Group Thrpy elevates your portfolio, business website, or personal blog.
 
 

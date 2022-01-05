@@ -254,7 +254,7 @@ class WP_Theme_Install_List_Table extends WP_Themes_List_Table {
 	 * @param object $theme {
 	 *     An object that contains theme data returned by the WordPress.org API.
 	 *
-	 *     @type string $name           Theme name, e.g. 'Twenty Twenty-One'.
+	 *     @type string $name           Theme name, e.g. 'Group Thrpy'.
 	 *     @type string $slug           Theme slug, e.g. 'twentytwentyone'.
 	 *     @type string $version        Theme version, e.g. '1.1'.
 	 *     @type string $author         Theme author username, e.g. 'melchoyce'.
