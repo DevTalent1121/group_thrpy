@@ -1,8 +1,9 @@
 <?php /* Template Name: Project Listing Page Template */ ?>
 <?php get_header(); ?>
+<div id="project_listing_page">
 <?php
     global $wpdb;
-    $table_name = $wpdb->prefix . "projects";
+    $table_name = $wpdb->prefix . "group_thrpy_projects";
     $rows = $wpdb->get_results("SELECT * from $table_name order by short_title");
     $name_arr = array();
     $video_id_arr = array();
@@ -81,7 +82,7 @@
 <iframe class="background-video" id="background-video_madhappy_laker" title="background" src="https://player.vimeo.com/video/604959142?h=61e1ff8846&background=1&autoplay=0&loop=1&mute=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <iframe class="background-video" id="background-video_madhappy_aspen" title="background" src="https://player.vimeo.com/video/654655382?h=79f65f9dea&background=1&autoplay=0&loop=1&mute=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
 </div>
-
+</div>
 
 <?php get_footer(); ?>
 <script>

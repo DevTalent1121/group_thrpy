@@ -639,6 +639,6 @@ function twentytwentyone_add_ie_class() {
 add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
 
 function my_theme_scripts() {
-    wp_enqueue_script( 'my-great-script', get_template_directory_uri() . '/assets/js/group_thrpy.js', array( 'jquery' ), '1.0.0', true );
+    wp_enqueue_script( 'my-great-script', get_template_directory_uri() . '/assets/js/group_thrpy.js', array( 'jquery' ), '1.0.1', true );
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );

@@ -1322,7 +1322,7 @@ if (typeof Object.create === 'function') {
     }
   };
 } else {
-  // old work shim for old browsers
+  // old school shim for old browsers
   module.exports = function inherits(ctor, superCtor) {
     if (superCtor) {
       ctor.super_ = superCtor

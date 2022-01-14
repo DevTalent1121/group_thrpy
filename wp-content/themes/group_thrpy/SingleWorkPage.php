@@ -4,7 +4,7 @@
 <?php
 
 global $wpdb;
-$table_name = $wpdb->prefix . "projects";
+$table_name = $wpdb->prefix . "group_thrpy_projects";
 $work_id = $_GET['id'];
 if(isset($_GET['id']))
 {

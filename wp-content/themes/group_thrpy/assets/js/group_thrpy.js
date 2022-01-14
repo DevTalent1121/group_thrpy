@@ -4,7 +4,7 @@ function getScaleScreen(w, h) {
   var scale = 1.000;
   console.log("width:" + w + " height: " + h +" x_int: "+int_x + " y_int: " + int_y);
   if(h>int_x*9)
-    scale = h/(int_val*9);
+    scale = h/(int_x*9);
   else{
     scale = w/(int_y*16);
   }
