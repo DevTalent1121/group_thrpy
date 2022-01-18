@@ -64,10 +64,10 @@
 			</div>--><!-- .powered-by -->
 		
 			<div class="email_name">
-			info@groupthrpy.com
+			<a href='mailto:info@groupthrpy.com'>info@groupthrpy.com</a>
 			</div>
-			<div class="site_identity">
-			@groupthrpy
+			<div class="instagram">
+			<a href='http://instagram.com/group.thrpy'>@group.thrpy</a>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
