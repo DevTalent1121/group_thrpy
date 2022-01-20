@@ -9,7 +9,7 @@
 	Requires at least: 5.3
 	Tested up to: 5.8
 	Requires PHP: 5.6
-	Version: 2.1.0
+	Version: 2.1.3
 	License: GNU General Public License v2 or later
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	Text Domain: twentytwentyone
@@ -6022,7 +6022,7 @@
 		margin-top: 0px;
 		padding-bottom: 50px;
 	}
-	#colophon.director_listing, #colophon.project_listing,#colophon.contact{
+	#colophon.director_listing,#colophon.special_project_listing, #colophon.project_listing,#colophon.contact{
 		position: absolute;
 		bottom: 0px;
 	}
@@ -6153,7 +6153,7 @@
 			/* max-width: 80% !important; */
 			max-height: 200px !important;
 		}
-		#project_listing_page, #contact_page, #director_listing_page {
+		#project_listing_page, #contact_page, #director_listing_page #special_project_listing {
 			height: auto !important;
 		}
 
@@ -6162,7 +6162,7 @@
 			height: auto !important;
 		}
 
-		#colophon.director_listing, #colophon.project_listing,#colophon.contact{
+		#colophon.director_listing,#colophon.special_project_listing, #colophon.project_listing,#colophon.contact{
 			position: relative;
 		}
 	
@@ -6178,7 +6178,7 @@
 	.site-title a{
 		text-decoration: none;
 	}
-	#project_listing_page, #contact_page, #director_listing_page {
+	#project_listing_page, #contact_page, #director_listing_page, #special_project_listing_page{
 		height: calc(90vh - 800px + 600px);
 	}
 
@@ -6199,13 +6199,13 @@
 	}
 
 	/**********Director**********/
-	#director_listing_page{
+	#director_listing_page, #special_project_listing_page{
 		padding-top: 5%;
 	}
-	#director_listing_page .direcotr_list{
+	#director_listing_page .direcotr_list, #special_project_listing_page .special_project_list{
 		text-align: center;
 	}
-	#director_listing_page .direcotr_list .director_item{
+	#director_listing_page .direcotr_list .director_item, #special_project_listing_page .special_project_list .director_item{
 		list-style: none;
 		margin-bottom: 20px;
 		font-size: 1.5rem;
