@@ -4,6 +4,8 @@ function group_thrpy_create() {
     // $id = $_POST["id"];
     $title = $_POST["title"];
     $short_title = $_POST["short_title"];
+    $before_short = $_POST["before_short"];
+    $after_short = $_POST["after_short"];
     $description = $_POST["description"];
     $video_url = $_POST["video_url"];
     $cd = $_POST["cd"];
@@ -20,6 +22,7 @@ function group_thrpy_create() {
     $hair = $_POST["hair"];
     $manicurist = $_POST["manicurist"];
     $VFX_supervisor = $_POST["VFX_supervisor"];
+    $order_id = $_POST["order_id"];
     //insert
     if (isset($_POST['insert'])) {
         global $wpdb;
@@ -30,6 +33,8 @@ function group_thrpy_create() {
                 array(
                     'title' => $title,
                     'short_title' => $short_title,
+                    'before_short' => $before_short,
+                    'after_short' => $after_short,
                     'description' => $description, 
                     'video_url' => $video_url, 
                     'cd' => $cd, 
@@ -45,7 +50,8 @@ function group_thrpy_create() {
                     'styling' => $styling, 
                     'hair' => $hair, 
                     'manicurist' => $manicurist, 
-                    'VFX_supervisor' => $VFX_supervisor
+                    'VFX_supervisor' => $VFX_supervisor,
+                    'order_id' => $order_id
                      
             ), //data
                 array('%s', '%s') //data format			
@@ -67,6 +73,14 @@ function group_thrpy_create() {
                 <tr>
                     <th class="ss-th-width">Short Title</th>
                     <td><input type="text" name="short_title" value="<?php echo $short_title; ?>" class="ss-field-width" /></td>
+                </tr>
+                <tr>
+                    <th class="ss-th-width">Text Before Title</th>
+                    <td><input type="text" name="before_short" value="<?php echo $before_short; ?>" class="ss-field-width" /></td>
+                </tr>
+                <tr>
+                    <th class="ss-th-width">Text After Title</th>
+                    <td><input type="text" name="after_short" value="<?php echo $after_short; ?>" class="ss-field-width" /></td>
                 </tr>
                 <tr>
                     <th class="ss-th-width">Description</th>
@@ -146,6 +160,10 @@ function group_thrpy_create() {
                 <tr>
                     <th class="ss-th-width">VFX Supervisor</th>
                     <td><input type="text" name="VFX_supervisor" value="<?php echo $VFX_supervisor; ?>" class="ss-field-width" /></td>
+                </tr>
+                <tr>
+                    <th class="ss-th-width">Display Order</th>
+                    <td><input type="text" name="order_id" value="<?php echo $order_id; ?>" class="ss-field-width" /></td>
                 </tr>
             </table>
             <input type='submit' name="insert" value='Save' class='button'>

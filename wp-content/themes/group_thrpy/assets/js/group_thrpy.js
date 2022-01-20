@@ -18,17 +18,18 @@ jQuery(document).ready(function($){
     $('<style>.background-video { transform: scale('+getScaleScreen(sc_width,sc_height)+'); }</style>').appendTo('body');
     $(".dc_project").mouseenter(function(){
         var video_id = "background-video_"+$(this).attr("data-video");
+        console.log(video_id);
         $(this).css("text-decoration","underline");
         $(".background-video").each(function(){
             $(this).removeClass("active");
             $(this)[0].muted=true;
         });
         $("body").css("background","transparent");
-        $("#"+video_id).addClass("active");    
+        $("#"+video_id).addClass("active");
     });
     $(".dc_project").mouseleave(function(){
         var video_id = "background-video_"+$(this).attr("data-video");
-        $(this).css("text-decoration","none");
+        // $(this).css("text-decoration","none");
         $("#"+video_id).removeClass("active");
     });
 });

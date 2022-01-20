@@ -4,8 +4,10 @@
 <?php
     global $wpdb;
     $table_name = $wpdb->prefix . "group_thrpy_projects";
-    $rows = $wpdb->get_results("SELECT * from $table_name order by short_title");
+    $rows = $wpdb->get_results("SELECT * from $table_name where order_id<999 order by order_id");
     $name_arr = array();
+    $before_txt_arr = array();
+    $after_txt_arr = array();
     $video_id_arr = array();
     $url_arr = array();
     $additional_param = "&background=1&autoplay=0&mute=1&loop=1&byline=0&title=0";
@@ -18,6 +20,8 @@
             // array_push($name_arr,$row->short_title);
             // array_push($video_id_arr,$video_id);
             $name_arr[$row->id] = $row->short_title;
+            $before_txt_arr[$row->id] = $row->before_short;
+            $after_txt_arr[$row->id] = $row->after_short;
             $video_id_arr[$row->id] = $video_id;
             // var_dump($video_id."->".$row->short_title);
         }
@@ -48,11 +52,27 @@
 ?>
 <div class="div_container">
     <?php
+        $cnt = 0;
         foreach($name_arr as $key=>$short_name){
-        $tmp_arr = explode(" ",$row->short_title);
-        $prefix_str = strtolower($tmp_arr[0]);
-        echo "<a href='".get_site_url()."/single-work?id=".$key."' data-video='".$video_id_arr[$key]."' id='".$video_id_arr[$key]."' class='dc_project'> $short_name</a>";
-    }
+            $tmp_arr = explode(" ",$row->short_title);
+            $prefix_str = strtolower($tmp_arr[0]);
+            $echo_str = "";
+            if($cnt>0){
+                $echo_str = ",";
+            }
+            $echo_str .= "<span class='li_segment'>";
+            if(isset($before_txt_arr[$key]))
+            {
+                $echo_str .= $before_txt_arr[$key];
+            }
+            $echo_str .= "<a href='".get_site_url()."/single-work?id=".$key."' data-video='".$video_id_arr[$key]."' id='".$video_id_arr[$key]."' class='dc_project'>$short_name</a>";
+            if(isset($after_txt_arr[$key])){
+                $echo_str .= $after_txt_arr[$key];
+            }
+            $echo_str .= "</span>";
+            echo $echo_str;
+            $cnt++;
+        }
     ?>
   <!-- <a href="/rem-ariana-grande" data-video="aime" id="aime" class="dc_project"> Aime Leon Dore </a>
   <a href="/rem-ariana-grande" data-video="ariana" id="ariana" class="dc_project"> Ariana Grande </a>
@@ -70,7 +90,7 @@
 <div class="div_video">
     <?php
     foreach($url_arr as $url){
-        echo "<iframe class='background-video' id='background-video_".get_video_id($url)."' title='background' src='".$url.$additional_param."' frameborder='0'></iframe>";
+        echo "<iframe class='background-video' id='background-video_".get_video_id($url)."' title='background' src='".$url.$additional_param."' frameborder='0' ></iframe>";
     }
     ?>
 <!-- <iframe class="background-video" id="background-video_saysh" title="background" src="https://player.vimeo.com/video/604959402?h=c0b96a2ca2&background=1&autoplay=0&mute=1&loop=1&byline=0&title=0" frameborder="0"></iframe>

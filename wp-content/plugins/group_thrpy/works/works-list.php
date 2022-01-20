@@ -15,13 +15,16 @@ function group_thrpy_list() {
         global $wpdb;
         $table_name = $wpdb->prefix . "group_thrpy_projects";
 
-        $rows = $wpdb->get_results("SELECT * from $table_name");
+        $rows = $wpdb->get_results("SELECT * from $table_name order by order_id");
 
         ?>
         <table class='wp-list-table widefat fixed striped posts'>
             <tr>
                 <!-- <th class="manage-column ss-list-width">ID</th> -->
+                <th class="manage-column ss-list-width">Order Sequence</th>
                 <th class="manage-column ss-list-width">Title</th>
+                <th class="manage-column ss-list-width">Before</th>
+                <th class="manage-column ss-list-width">After</th>
                 <th class="manage-column ss-list-width">Description</th>
                 <th class="manage-column ss-list-width">Video URL</th>
                 <th class="manage-column ss-list-width">CD</th>
@@ -53,7 +56,10 @@ function group_thrpy_list() {
                 
                 ?>
                 <tr>
+                    <td class="manage-column ss-list-width"><?php echo $row->order_id; ?></td>
                     <td class="manage-column ss-list-width"><?php echo $row->title; ?></td>
+                    <td class="manage-column ss-list-width"><?php echo $row->before_short; ?></td>
+                    <td class="manage-column ss-list-width"><?php echo $row->after_short; ?></td>
                     <td class="manage-column ss-list-width"><?php echo $row->description; ?></td>
                     <td class="manage-column ss-list-width"><?php echo $row->video_url; ?></td>
                     <td class="manage-column ss-list-width"><?php echo $row->cd; ?></td>

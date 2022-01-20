@@ -18,6 +18,8 @@ function ss_options_install() {
 		`id` INT NOT NULL AUTO_INCREMENT,
 		`title` TINYTEXT,
 		`short_title` TINYTEXT,
+		`before_short` TINYTEXT,
+		`after_short` TINYTEXT,
 		`description` TINYTEXT,
 		`video_url` TINYTEXT,
 		`cd` TINYTEXT,
@@ -34,6 +36,7 @@ function ss_options_install() {
 		`hair` TINYTEXT,
 		`manicurist` TINYTEXT,
 		`VFX_supervisor` TINYTEXT,
+		`order_id` int(11) DEFAULT '999',
 		PRIMARY KEY (`id`)
 	  ) CHARSET=utf8 COLLATE=utf8_unicode_ci;
 	   ".
